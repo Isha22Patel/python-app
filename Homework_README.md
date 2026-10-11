@@ -311,10 +311,12 @@ docker build -t taskboard-backend:local ./backend
 Run with a reachable PostgreSQL instance:
 
 ```bash
-docker run --rm -p 8000:8000 \
+docker run --rm -p 8001:8000 \
   -e DATABASE_URL='postgresql+psycopg://taskboard:taskboard@host.docker.internal:5432/taskboard' \
   taskboard-backend:local
 ```
+
+![alt text](image-6.png)
 
 ## 10. Frontend Dockerfile
 
@@ -337,6 +339,9 @@ Build:
 ```bash
 docker build -t taskboard-frontend:local ./frontend
 ```
+
+
+![alt text](image-5.png)
 
 ---
 
